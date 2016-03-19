@@ -3,7 +3,7 @@ import loadScript from 'tiny-load-script';
 import Console from 'console-class';
 const console = new Console('FB API', false);
 console.color = '#3b5998';
-export {console as logging}; // logging.on() or logging.off();
+loadAPI.logging = console; // loadAPI.logging.on() or loadAPI.logging.off();
 
 let API;
 

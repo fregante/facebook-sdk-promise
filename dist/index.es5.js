@@ -7,7 +7,7 @@ var Console = _interopDefault(require('console-class'));
 
 var console = new Console('FB API', false);
 console.color = '#3b5998';
-// logging.on() or logging.off();
+loadAPI.logging = console; // loadAPI.logging.on() or loadAPI.logging.off();
 
 var API = void 0;
 
