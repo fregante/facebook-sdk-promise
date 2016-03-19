@@ -7,7 +7,7 @@ var Console = _interopDefault(require('console-class'));
 
 var console = new Console('FB SDK', false);
 console.color = '#3b5998';
-loadAPI.logging = console; // loadAPI.logging.on() or loadAPI.logging.off();
+loadSDK.logging = console; // loadSDK.logging.on() or loadSDK.logging.off();
 
 var SDK = void 0;
 
@@ -20,15 +20,15 @@ var SDK = void 0;
 
 function loadSDK() {
 	SDK = SDK || new Promise(function (resolve) {
-		function apiReady() {
+		function sdkReady() {
 			console.log('Ready');
 			resolve(window.FB);
 		}
 		if (window.FB && window.FB.init) {
-			apiReady();
+			sdkReady();
 		} else {
 			console.log('Waiting to be ready');
-			window.fbAsyncInit = apiReady;
+			window.fbAsyncInit = sdkReady;
 			if (!document.querySelector('script[src*="connect.facebook.net"]')) {
 				console.warn('Facebook SDK script not found, loading now. Add this in the document to have the SDK available sooner: \n <script src="//connect.facebook.net/en_US/sdk.js" async></script> ');
 				loadScript('//connect.facebook.net/en_US/sdk.js');
