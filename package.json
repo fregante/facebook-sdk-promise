@@ -1,7 +1,7 @@
 {
-  "name": "facebook-api-promise",
+  "name": "facebook-sdk-promise",
   "version": "1.0.0",
-  "description": "Load Facebook's API and return a Promise. If it's already loading it won't try to load it again.",
+  "description": "Load Facebook's SDK and return a Promise. If it's already loading it won't try to load it again.",
   "main": "index.js",
   "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
   "license": "MIT",

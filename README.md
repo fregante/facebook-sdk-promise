@@ -1,27 +1,27 @@
-# facebook-api-promise
+# facebook-sdk-promise
 
-> Load Facebook's API and return a Promise. If it's already loading it won't try to load it again.
+> Load Facebook's SDK and return a Promise. If it's already loading it won't try to load it again.
 
 ## Install 
 ```sh
-npm i --save facebook-api-promise
+npm i --save facebook-sdk-promise
 ```
 
 ## Usage
 
 ```js
-import loadFacebookAPI from 'facebook-api-promise';
-loadFacebookAPI().then(FB => {
-    console.log('Facebook API has loaded!', FB);
+import loadFBSDK from 'facebook-sdk-promise';
+loadFBSDK().then(FB => {
+    console.log('Facebook SDK has loaded!', FB);
 })
 ```
 
 ### Enable or disable the internal logging
 
 ```js
-import loadFacebookAPI from 'facebook-api-promise';
+import loadFBSDK from 'facebook-sdk-promise';
 // it starts "off"
-loadFacebookAPI.logging.on();
+loadFBSDK.logging.on();
 // [FB API] Facebook SDK script not found, loading now. Add this in the document to have the API available sooner: <script src="//connect.facebook.net/en_US/sdk.js" async></script>
 // [FB API] Waiting to be ready
 // [FB API] Ready
