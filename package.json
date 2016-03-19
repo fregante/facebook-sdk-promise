@@ -1,0 +1,22 @@
+{
+  "name": "facebook-api-promise",
+  "version": "1.0.0",
+  "description": "Load Facebook's API and return a Promise. If it's already loading it won't try to load it again.",
+  "main": "index.js",
+  "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
+  "license": "MIT",
+  "main": "dist/index.es5.js",
+  "jsnext:main": "index.js",
+  "scripts": {
+    "build": "rollup-babel-lib-bundler --name 'index.es5' --format cjs --dest ./dist ./index.js",
+    "prepublish": "npm run build"
+  },
+  "dependencies": {
+    "console-class": "^1.0.0",
+    "tiny-load-script": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-loose-rollup": "^7.0.0",
+    "rollup-babel-lib-bundler": "^2.3.3"
+  }
+}
