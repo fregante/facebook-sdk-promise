@@ -18,5 +18,8 @@
   "devDependencies": {
     "babel-preset-es2015-loose-rollup": "^7.0.0",
     "rollup-babel-lib-bundler": "^2.3.3"
+  },
+  "babel": {
+    "presets": ["es2015-loose-rollup"]
   }
 }
