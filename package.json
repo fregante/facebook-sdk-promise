@@ -1,25 +1,26 @@
 {
   "name": "facebook-sdk-promise",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Load Facebook's SDK and return a Promise. If it's already loading it won't try to load it again.",
-  "main": "index.js",
+  "main": "dist/index.es5.js",
   "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
   "license": "MIT",
-  "main": "dist/index.es5.js",
   "jsnext:main": "index.js",
   "scripts": {
-    "build": "rollup-babel-lib-bundler --libName 'index.es5' --format cjs --dest ./dist ./index.js",
+    "build": "rollup-babel-lib-bundler --lib-name 'index.es5' --format cjs --dest ./dist ./index.js",
     "prepublish": "npm run build"
   },
   "dependencies": {
-    "console-class": "^1.0.0",
+    "console-class": "^2.0.0",
     "tiny-load-script": "^1.0.0"
   },
   "devDependencies": {
     "babel-preset-es2015-loose-rollup": "^7.0.0",
-    "rollup-babel-lib-bundler": "^2.3.5"
+    "rollup-babel-lib-bundler": "^2.3.6"
   },
   "babel": {
-    "presets": ["es2015-loose-rollup"]
+    "presets": [
+      "es2015-loose-rollup"
+    ]
   }
 }

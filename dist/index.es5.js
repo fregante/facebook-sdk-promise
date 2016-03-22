@@ -5,8 +5,7 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var loadScript = _interopDefault(require('tiny-load-script'));
 var Console = _interopDefault(require('console-class'));
 
-var console = new Console('FB SDK', false);
-console.color = '#3b5998';
+var console = new Console('FB SDK', { color: '#3b5998' }).off();
 loadSDK.logging = console; // loadSDK.logging.on() or loadSDK.logging.off();
 
 var SDK = void 0;
@@ -36,6 +35,6 @@ function loadSDK() {
 		}
 	});
 	return SDK;
-}
+};
 
 module.exports = loadSDK;

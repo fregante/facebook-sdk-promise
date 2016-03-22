@@ -1,8 +1,7 @@
 'use strict';
 import loadScript from 'tiny-load-script';
 import Console from 'console-class';
-const console = new Console('FB SDK', false);
-console.color = '#3b5998';
+const console = new Console('FB SDK', {color:'#3b5998'}).off();
 loadSDK.logging = console; // loadSDK.logging.on() or loadSDK.logging.off();
 
 let SDK;
@@ -32,4 +31,4 @@ export default function loadSDK () {
 		}
 	});
 	return SDK;
-}
+};
