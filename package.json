@@ -1,6 +1,6 @@
 {
   "name": "facebook-sdk-promise",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Load Facebook's SDK and return a Promise. If it's already loading it won't try to load it again.",
   "main": "dist/index.es5.js",
   "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
@@ -22,5 +22,13 @@
     "presets": [
       "es2015-loose-rollup"
     ]
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfred-it/facebook-sdk-promise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bfred-it/facebook-sdk-promise/issues"
+  },
+  "homepage": "https://github.com/bfred-it/facebook-sdk-promise#readme"
 }
