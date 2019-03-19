@@ -30,7 +30,7 @@ function loadSDK() {
 			window.fbAsyncInit = sdkReady;
 			if (!document.querySelector('script[src*="connect.facebook.net"]')) {
 				console.warn('Facebook SDK script not found, loading now. Add this in the document to have the SDK available sooner: \n <script src="//connect.facebook.net/en_US/sdk.js" async></script> ');
-				loadScript('//connect.facebook.net/en_US/sdk.js');
+				loadScript('https://connect.facebook.net/en_US/sdk.js');
 			}
 		}
 	});
