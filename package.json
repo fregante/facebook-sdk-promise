@@ -2,13 +2,19 @@
   "name": "facebook-sdk-promise",
   "version": "1.2.2",
   "description": "Load Facebook's SDK and return a Promise. If it's already loading it won't try to load it again.",
-  "main": "dist/index.es5.js",
-  "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
+  "repository": "fregante/facebook-sdk-promise",
   "license": "MIT",
+  "author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
+  "main": "dist/index.es5.js",
   "jsnext:main": "index.js",
   "scripts": {
     "build": "rollup-babel-lib-bundler --lib-name 'index.es5' --format cjs --dest ./dist ./index.js",
     "prepublish": "npm run build"
+  },
+  "babel": {
+    "presets": [
+      "es2015-loose-rollup"
+    ]
   },
   "dependencies": {
     "console-class": "^2.0.0",
@@ -17,18 +23,5 @@
   "devDependencies": {
     "babel-preset-es2015-loose-rollup": "^7.0.0",
     "rollup-babel-lib-bundler": "^2.3.6"
-  },
-  "babel": {
-    "presets": [
-      "es2015-loose-rollup"
-    ]
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bfred-it/facebook-sdk-promise.git"
-  },
-  "bugs": {
-    "url": "https://github.com/bfred-it/facebook-sdk-promise/issues"
-  },
-  "homepage": "https://github.com/bfred-it/facebook-sdk-promise#readme"
+  }
 }
